@@ -1,0 +1,41 @@
+{
+  "name": "@willsigmon/sfdchti",
+  "version": "1.0.0",
+  "description": "Salesforce Integration for HubZone Technology Initiative - JWT Bearer Flow, REST API client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "salesforce",
+    "hubzone",
+    "hti",
+    "jwt",
+    "rest-api",
+    "crm"
+  ],
+  "author": "Will Sigmon <will@hubzonetechnology.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willsigmon/SFDCHTI.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.0.0"
+  }
+}
